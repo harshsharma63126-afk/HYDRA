@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>Hydra Cars Jaipur — Premium Self Drive & Wedding Car Rental</title>
+<meta name="description" content="Hydra Cars Jaipur — premium self drive cars, luxury wedding fleet & 24×7 rental with home delivery in Mansarovar, Jaipur. 5.0★ Google rated, 119+ reviews." />
+<link rel="canonical" href="https://hydracarsjaipur.com/" />
+<meta property="og:title" content="Hydra Cars Jaipur — Premium Self Drive & Wedding Cars" />
+<meta property="og:description" content="Luxury fleet from Swift to Fortuner. Self drive, chauffeur, wedding & outstation. 24×7 home delivery in Jaipur." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRental",
+  "name":"Hydra Cars Jaipur",
+  "image":"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600",
+  "telephone":"+918740056887",
+  "email":"hydracarsjaipur@gmail.com",
+  "priceRange":"₹1,800 – ₹7,000 / day",
+  "address":{"@type":"PostalAddress","streetAddress":"Shiv Vatika-A, Manyawas, Mansarovar","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"302020","addressCountry":"IN"},
+  "openingHours":"Mo-Su 00:00-23:59",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"119"}
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#070707;
+  --bg-2:#0d0d0d;
+  --ink:#f6f1e6;
+  --ink-dim:#a8a097;
+  --gold:#d4af37;
+  --gold-2:#f5d77a;
+  --gold-deep:#8a6a14;
+  --line:rgba(212,175,55,.18);
+  --glass:rgba(255,255,255,.04);
+  --glass-strong:rgba(255,255,255,.07);
+  --radius:22px;
+  --radius-lg:28px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --container:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.container{max-width:var(--container);margin:0 auto;padding:0 24px}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.01em}
+.italiana{font-family:'Italiana',serif;letter-spacing:.02em}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.section{padding:120px 0;position:relative}
+.section h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,5vw,68px);line-height:1.05;letter-spacing:-.02em;margin:14px 0 18px}
+.section h2 em{font-style:italic;color:var(--gold-2);background:linear-gradient(180deg,#f5d77a,#d4af37);-webkit-background-clip:text;background-clip:text;color:transparent}
+.section .lead{color:var(--ink-dim);max-width:640px;font-size:17px}
+
+/* ============ LOADER ============ */
+#loader{position:fixed;inset:0;background:#000;z-index:200;display:grid;place-items:center;transition:opacity .8s,visibility .8s}
+#loader.hide{opacity:0;visibility:hidden}
+.loader-mark{font-family:'Italiana',serif;font-size:46px;color:var(--gold);letter-spacing:.4em;position:relative}
+.loader-mark::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:lscan 1.4s var(--ease) infinite}
+@keyframes lscan{0%{transform:scaleX(0);transform-origin:left}50%{transform:scaleX(1)}100%{transform:scaleX(0);transform-origin:right}}
+
+/* ============ CURSOR ============ */
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:150;border-radius:50%;mix-blend-mode:difference}
+.cursor-dot{width:6px;height:6px;background:var(--gold);transform:translate(-50%,-50%)}
+.cursor-ring{width:38px;height:38px;border:1px solid rgba(212,175,55,.5);transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s}
+.cursor-ring.hover{width:64px;height:64px;border-color:var(--gold)}
+@media (max-width:900px){.cursor-dot,.cursor-ring{display:none}}
+
+/* ============ NAV ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;padding:18px 0;transition:.4s var(--ease)}
+.nav.scrolled{background:rgba(7,7,7,.7);backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid var(--line);padding:12px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Italiana',serif;font-size:22px;letter-spacing:.3em}
+.brand-mark{width:38px;height:38px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;border-radius:50%}
+.menu{display:flex;gap:34px;align-items:center}
+.menu a{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);position:relative;padding:6px 0;transition:.3s}
+.menu a:hover{color:var(--ink)}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:.35s var(--ease)}
+.menu a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border:1px solid var(--gold);color:var(--gold);border-radius:999px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;transition:.35s}
+.nav-cta:hover{background:var(--gold);color:#000}
+.hamburger{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;align-items:center;justify-content:center}
+.hamburger span{width:18px;height:1px;background:var(--ink);position:relative}
+.hamburger span::before,.hamburger span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:var(--ink)}
+.hamburger span::before{top:-6px}.hamburger span::after{top:6px}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .hamburger{display:inline-flex}
+}
+.mobile-sheet{position:fixed;inset:0;background:rgba(7,7,7,.96);backdrop-filter:blur(20px);z-index:120;display:none;flex-direction:column;padding:90px 28px 40px;gap:8px}
+.mobile-sheet.open{display:flex;animation:fadeUp .5s var(--ease)}
+.mobile-sheet a{padding:18px 0;border-bottom:1px solid var(--line);font-family:'Cormorant Garamond',serif;font-size:28px}
+.mobile-sheet .close{position:absolute;top:24px;right:24px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;font-size:22px}
+
+/* ============ HERO ============ */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;padding:140px 0 120px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 600px at 75% 35%,rgba(212,175,55,.18),transparent 60%),
+  radial-gradient(700px 500px at 10% 90%,rgba(212,175,55,.08),transparent 60%),
+  linear-gradient(180deg,#070707 0%,#0b0b0b 70%,#070707 100%);
+}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35;mix-blend-mode:luminosity;filter:contrast(1.05)}
+.grain{position:absolute;inset:0;opacity:.08;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/></svg>")}
+.float{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.35),transparent 70%);filter:blur(40px);animation:float 14s ease-in-out infinite}
+.float.f1{width:380px;height:380px;top:8%;left:-80px;animation-delay:-2s}
+.float.f2{width:280px;height:280px;bottom:-60px;right:5%;animation-delay:-6s;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%)}
+.float.f3{width:200px;height:200px;top:40%;right:25%;background:radial-gradient(circle,rgba(212,175,55,.25),transparent 70%)}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.08)}}
+
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+@media (max-width:980px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+.hero-rating{display:inline-flex;align-items:center;gap:14px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;background:var(--glass);backdrop-filter:blur(10px);font-size:13px;color:var(--ink-dim)}
+.hero-rating .stars{color:var(--gold);letter-spacing:2px}
+h1.hero-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,7vw,104px);line-height:1;letter-spacing:-.03em;margin:28px 0 24px}
+h1.hero-title em{font-style:italic;background:linear-gradient(180deg,#f5d77a,#8a6a14);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--ink-dim);font-size:18px;max-width:520px;margin-bottom:38px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border-radius:999px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;transition:.4s var(--ease);position:relative;overflow:hidden}
+.btn-gold{background:linear-gradient(135deg,#f5d77a,#d4af37);color:#0a0a0a;box-shadow:0 18px 50px -20px rgba(212,175,55,.7)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 24px 60px -18px rgba(212,175,55,.85)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink);background:var(--glass);backdrop-filter:blur(10px)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn .arr{transition:transform .35s}
+.btn:hover .arr{transform:translateX(5px)}
+
+.hero-trust{margin-top:54px;display:flex;gap:36px;flex-wrap:wrap;color:var(--ink-dim);font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px}
+.hero-trust span::before{content:"◆";color:var(--gold);font-size:8px}
+
+/* hero card */
+.hero-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(14px);aspect-ratio:4/5}
+.hero-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.hero-card:hover img{transform:scale(1.06)}
+.hero-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.85))}
+.hero-card .badge{position:absolute;top:22px;left:22px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);z-index:2}
+.hero-card .meta{position:absolute;left:24px;right:24px;bottom:26px;z-index:2}
+.hero-card .meta h4{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500}
+.hero-card .meta p{color:var(--ink-dim);font-size:13px;margin-top:6px}
+.hero-card .price{position:absolute;right:22px;bottom:26px;text-align:right;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:28px;z-index:2}
+.hero-card .price small{display:block;color:var(--ink-dim);font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.25em;text-transform:uppercase;margin-bottom:4px}
+
+/* hero stats */
+.hero-stats{position:absolute;left:0;right:0;bottom:0;z-index:3;border-top:1px solid var(--line);background:rgba(7,7,7,.6);backdrop-filter:blur(14px)}
+.hero-stats .container{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 24px}
+.hero-stats .stat{border-left:1px solid var(--line);padding:0 26px}
+.hero-stats .stat:first-child{border-left:0;padding-left:0}
+.hero-stats .num{font-family:'Cormorant Garamond',serif;font-size:38px;color:var(--gold)}
+.hero-stats .lbl{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--ink-dim);margin-top:4px}
+@media (max-width:780px){.hero-stats{position:relative;margin-top:40px}.hero-stats .container{grid-template-columns:repeat(2,1fr);gap:18px 0}.hero-stats .stat:nth-child(3){border-left:0;padding-left:0}}
+
+.scroll-ind{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-dim);z-index:4;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-ind::after{content:"";width:1px;height:50px;background:linear-gradient(180deg,var(--gold),transparent);animation:scr 2s var(--ease) infinite}
+@keyframes scr{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ============ MARQUEE ============ */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0;background:#050505}
+.marquee-track{display:flex;gap:80px;animation:scroll 28s linear infinite;white-space:nowrap}
+.marquee-track span{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--ink-dim);font-style:italic;display:inline-flex;align-items:center;gap:80px}
+.marquee-track span::after{content:"✦";color:var(--gold);margin-left:80px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+@media (max-width:980px){.about-grid{grid-template-columns:1fr;gap:50px}}
+.about-visual{position:relative;aspect-ratio:1/1.1;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line)}
+.about-visual img{width:100%;height:100%;object-fit:cover}
+.about-stamp{position:absolute;right:-30px;bottom:-30px;width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#8a6a14);display:grid;place-items:center;text-align:center;color:#0a0a0a;font-family:'Cormorant Garamond',serif;animation:spin 22s linear infinite}
+.about-stamp span{font-size:48px;font-weight:600;line-height:1}
+.about-stamp small{font-size:10px;letter-spacing:.3em;text-transform:uppercase;display:block;margin-top:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about-points{margin-top:36px;display:grid;gap:18px}
+.about-points li{display:flex;gap:18px;padding:18px 22px;border:1px solid var(--line);background:var(--glass);border-radius:18px;backdrop-filter:blur(10px)}
+.about-points .ic{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,rgba(212,175,55,.2),rgba(212,175,55,0));border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);flex-shrink:0}
+.about-points h5{font-family:'Cormorant Garamond',serif;font-size:22px;margin-bottom:2px}
+.about-points p{color:var(--ink-dim);font-size:14px}
+
+/* ============ SERVICES ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:60px}
+@media (max-width:980px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+.svc{position:relative;padding:34px 28px;border-radius:var(--radius);border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(12px);overflow:hidden;transition:.5s var(--ease)}
+.svc::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at var(--mx,50%) var(--my,0),rgba(212,175,55,.15),transparent 60%);opacity:0;transition:.4s}
+.svc:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.45)}
+.svc:hover::before{opacity:1}
+.svc .ic{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);margin-bottom:24px;position:relative;z-index:2}
+.svc h4{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:10px;position:relative;z-index:2}
+.svc p{color:var(--ink-dim);font-size:14px;position:relative;z-index:2}
+.svc .more{margin-top:18px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:8px;position:relative;z-index:2}
+
+/* ============ FLEET ============ */
+.fleet-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:54px;flex-wrap:wrap}
+.filter-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.filter-tabs button{padding:10px 18px;border-radius:999px;border:1px solid var(--line);color:var(--ink-dim);font-size:11px;letter-spacing:.22em;text-transform:uppercase;transition:.3s}
+.filter-tabs button.active,.filter-tabs button:hover{background:var(--gold);color:#000;border-color:var(--gold)}
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:980px){.fleet-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.fleet-grid{grid-template-columns:1fr}}
+.car{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--bg-2);transition:.5s var(--ease);transform-style:preserve-3d}
+.car:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.45);box-shadow:0 30px 60px -30px rgba(212,175,55,.3)}
+.car-img{position:relative;aspect-ratio:4/3;overflow:hidden}
+.car-img img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.car:hover .car-img img{transform:scale(1.08)}
+.car-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.6))}
+.car-cat{position:absolute;top:14px;left:14px;padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);z-index:2}
+.car-body{padding:24px 22px}
+.car-body h4{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:6px}
+.car-specs{display:flex;gap:14px;color:var(--ink-dim);font-size:12px;margin:14px 0 18px;flex-wrap:wrap}
+.car-specs span{display:inline-flex;align-items:center;gap:6px}
+.car-foot{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid var(--line)}
+.car-price{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold)}
+.car-price small{font-family:'Inter',sans-serif;font-size:11px;color:var(--ink-dim);letter-spacing:.2em;text-transform:uppercase;display:block;margin-top:-4px}
+.car-btn{padding:11px 18px;border-radius:999px;background:#f6f1e6;color:#000;font-size:11px;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center;transition:.3s}
+.car-btn:hover{background:var(--gold)}
+
+/* ============ WHY ============ */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
+@media (max-width:900px){.why-grid{grid-template-columns:1fr}}
+.why{padding:38px 32px;border-radius:var(--radius);border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(14px);position:relative;overflow:hidden;transition:.4s}
+.why:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.4)}
+.why .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:60px;color:transparent;-webkit-text-stroke:1px var(--gold);position:absolute;top:14px;right:22px;opacity:.4}
+.why h4{font-family:'Cormorant Garamond',serif;font-size:28px;margin:18px 0 10px}
+.why p{color:var(--ink-dim);font-size:14px}
+
+/* ============ STATS COUNTER ============ */
+.counter{padding:80px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,#050505,#0a0a0a)}
+.counter .container{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+@media (max-width:780px){.counter .container{grid-template-columns:repeat(2,1fr);gap:40px 20px}}
+.counter .num{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6vw,84px);color:var(--gold);line-height:1}
+.counter .lbl{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-dim);margin-top:10px}
+
+/* ============ PROCESS TIMELINE ============ */
+.timeline{position:relative;margin-top:60px;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,var(--gold),transparent)}
+.tl-item{position:relative;padding:22px 0 22px 40px}
+.tl-item::before{content:"";position:absolute;left:-7px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(212,175,55,.15)}
+.tl-item .step{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:18px;margin-bottom:4px}
+.tl-item h4{font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:8px}
+.tl-item p{color:var(--ink-dim);font-size:14px;max-width:560px}
+
+/* ============ TESTIMONIALS ============ */
+.tslider{margin-top:60px;position:relative;overflow:hidden}
+.ttrack{display:flex;gap:24px;transition:transform .6s var(--ease)}
+.tcard{flex:0 0 calc(33.333% - 16px);padding:38px 32px;border:1px solid var(--line);border-radius:var(--radius);background:var(--glass);backdrop-filter:blur(14px);min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
+@media (max-width:980px){.tcard{flex:0 0 calc(50% - 12px)}}
+@media (max-width:620px){.tcard{flex:0 0 100%}}
+.tcard .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.tcard .quote{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.5;font-style:italic}
+.tcard .who{display:flex;align-items:center;gap:14px;margin-top:24px}
+.tcard .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#8a6a14);display:grid;place-items:center;color:#0a0a0a;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600}
+.tcard .who h6{font-size:14px;font-weight:500}
+.tcard .who small{color:var(--ink-dim);font-size:12px}
+.tnav{display:flex;justify-content:flex-end;gap:10px;margin-top:30px}
+.tnav button{width:50px;height:50px;border-radius:50%;border:1px solid var(--line);color:var(--ink);transition:.3s}
+.tnav button:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06)}
+
+/* ============ GALLERY ============ */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:60px}
+@media (max-width:780px){.gal{grid-template-columns:repeat(2,1fr)}}
+.gal a{display:block;border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--line)}
+.gal a img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gal a:hover img{transform:scale(1.1)}
+.gal a::after{content:"+";position:absolute;inset:0;background:rgba(7,7,7,.65);color:var(--gold);font-size:36px;display:grid;place-items:center;opacity:0;transition:.4s}
+.gal a:hover::after{opacity:1}
+.gal a.big{grid-column:span 2;grid-row:span 2}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:160;display:none;align-items:center;justify-content:center;padding:30px}
+.lightbox.open{display:flex;animation:fadeUp .3s var(--ease)}
+.lightbox img{max-width:90vw;max-height:88vh;border-radius:12px;border:1px solid var(--line)}
+.lightbox .x{position:absolute;top:24px;right:24px;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);color:#fff;font-size:22px}
+
+/* ============ PRICING ============ */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px}
+@media (max-width:900px){.price-grid{grid-template-columns:1fr}}
+.plan{padding:40px 34px;border:1px solid var(--line);border-radius:var(--radius);background:var(--glass);backdrop-filter:blur(14px);position:relative;transition:.4s}
+.plan:hover{transform:translateY(-6px)}
+.plan.feat{border-color:var(--gold);background:linear-gradient(180deg,rgba(212,175,55,.08),rgba(212,175,55,0))}
+.plan .pop{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;padding:6px 16px;border-radius:999px;font-size:10px;letter-spacing:.25em;text-transform:uppercase}
+.plan h4{font-family:'Cormorant Garamond',serif;font-size:30px;margin-bottom:6px}
+.plan .desc{color:var(--ink-dim);font-size:13px;margin-bottom:24px}
+.plan .pamt{font-family:'Cormorant Garamond',serif;font-size:54px;color:var(--gold);line-height:1}
+.plan .pamt small{font-family:'Inter',sans-serif;font-size:12px;color:var(--ink-dim);letter-spacing:.2em;text-transform:uppercase}
+.plan ul{list-style:none;margin:28px 0;display:grid;gap:12px}
+.plan ul li{display:flex;gap:10px;font-size:14px;color:var(--ink-dim)}
+.plan ul li::before{content:"✓";color:var(--gold);font-weight:700}
+.plan .btn{width:100%;justify-content:center}
+
+/* ============ FAQ ============ */
+.faq{max-width:860px;margin:60px auto 0;display:grid;gap:14px}
+.faq details{border:1px solid var(--line);border-radius:18px;background:var(--glass);backdrop-filter:blur(10px);padding:0 28px;transition:.3s}
+.faq details[open]{border-color:rgba(212,175,55,.4);background:rgba(212,175,55,.04)}
+.faq summary{padding:24px 0;font-family:'Cormorant Garamond',serif;font-size:22px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.faq summary::after{content:"+";color:var(--gold);font-size:28px;font-weight:300;transition:.3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 24px;color:var(--ink-dim);font-size:15px}
+
+/* ============ BLOG ============ */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+@media (max-width:900px){.blog-grid{grid-template-columns:1fr}}
+.post{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--glass);transition:.4s}
+.post:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.4)}
+.post-img{aspect-ratio:16/10;overflow:hidden}
+.post-img img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.post:hover .post-img img{transform:scale(1.08)}
+.post-body{padding:26px}
+.post .tag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+.post h4{font-family:'Cormorant Garamond',serif;font-size:24px;margin:10px 0 12px;line-height:1.25}
+.post p{color:var(--ink-dim);font-size:14px}
+.post .meta{margin-top:18px;display:flex;justify-content:space-between;color:var(--ink-dim);font-size:12px;padding-top:18px;border-top:1px solid var(--line)}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;margin-top:60px}
+@media (max-width:980px){.contact-grid{grid-template-columns:1fr}}
+.cinfo{display:grid;gap:18px;margin-top:30px}
+.cinfo .row{display:flex;gap:18px;align-items:center;padding:20px 22px;border:1px solid var(--line);border-radius:18px;background:var(--glass);backdrop-filter:blur(10px)}
+.cinfo .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,rgba(212,175,55,.2),transparent);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);flex-shrink:0}
+.cinfo small{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:4px}
+.cinfo .v{font-family:'Cormorant Garamond',serif;font-size:20px}
+.cform{padding:38px 34px;border:1px solid var(--line);border-radius:var(--radius);background:var(--glass);backdrop-filter:blur(14px)}
+.cform h4{font-family:'Cormorant Garamond',serif;font-size:30px;margin-bottom:8px}
+.cform p.sub{color:var(--ink-dim);font-size:14px;margin-bottom:24px}
+.field{margin-bottom:16px}
+.field label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:12px;color:var(--ink);font-family:inherit;font-size:14px;transition:.3s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:rgba(0,0,0,.6)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:540px){.row2{grid-template-columns:1fr}}
+.cform .err{color:#ff6b6b;font-size:12px;margin-top:6px;display:none}
+.cform .field.bad .err{display:block}
+.cform .field.bad input,.cform .field.bad select,.cform .field.bad textarea{border-color:#ff6b6b}
+.map{margin-top:30px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:300px}
+.map iframe{width:100%;height:100%;border:0;filter:invert(.9) hue-rotate(180deg) grayscale(.3)}
+
+/* ============ NEWSLETTER ============ */
+.news{padding:80px 0;background:radial-gradient(800px 400px at 50% 50%,rgba(212,175,55,.12),transparent 70%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+.news h3{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,52px);margin-bottom:14px}
+.news p{color:var(--ink-dim);max-width:520px;margin:0 auto 30px}
+.news form{display:flex;gap:10px;max-width:480px;margin:0 auto;padding:8px;border:1px solid var(--line);border-radius:999px;background:rgba(0,0,0,.6);backdrop-filter:blur(10px)}
+.news input{flex:1;border:0;background:transparent;padding:12px 20px;color:var(--ink);font-family:inherit}
+.news input:focus{outline:none}
+.news button{padding:12px 26px;border-radius:999px;background:linear-gradient(135deg,#f5d77a,#d4af37);color:#000;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+
+/* ============ FOOTER ============ */
+footer{background:#040404;padding:80px 0 30px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr 1fr;gap:50px;margin-bottom:50px}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media (max-width:560px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid h6{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.foot-grid ul{list-style:none;display:grid;gap:12px}
+.foot-grid a{color:var(--ink-dim);font-size:14px;transition:.3s}
+.foot-grid a:hover{color:var(--gold)}
+.foot-grid p{color:var(--ink-dim);font-size:14px;margin-bottom:18px}
+.socials{display:flex;gap:10px}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);transition:.3s}
+.socials a:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06);transform:translateY(-3px)}
+.foot-bot{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;color:var(--ink-dim);font-size:12px;flex-wrap:wrap;gap:14px;letter-spacing:.05em}
+.foot-bot .credit{font-size:10px;letter-spacing:.2em;text-transform:lowercase}
+
+/* ============ FLOATING ============ */
+.wa-fab,.top-fab{position:fixed;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;z-index:80;transition:.4s var(--ease);box-shadow:0 14px 40px -10px rgba(0,0,0,.5)}
+.wa-fab{bottom:24px;right:24px;background:#25d366;color:#fff;animation:pulse 2.4s var(--ease) infinite}
+.wa-fab:hover{transform:scale(1.1)}
+@keyframes pulse{0%,100%{box-shadow:0 14px 40px -10px rgba(37,211,102,.6),0 0 0 0 rgba(37,211,102,.5)}50%{box-shadow:0 14px 40px -10px rgba(37,211,102,.6),0 0 0 20px rgba(37,211,102,0)}}
+.top-fab{bottom:92px;right:24px;background:rgba(7,7,7,.8);backdrop-filter:blur(10px);border:1px solid var(--gold);color:var(--gold);opacity:0;pointer-events:none}
+.top-fab.show{opacity:1;pointer-events:auto}
+
+/* mobile sticky bar */
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(7,7,7,.92);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:10px 14px;gap:10px}
+.mbar a{flex:1;padding:14px;border-radius:14px;text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px}
+.mbar .call{background:#f6f1e6;color:#000}
+.mbar .wa{background:#25d366;color:#fff}
+@media (max-width:720px){
+  .mbar{display:flex}
+  body{padding-bottom:80px}
+  .wa-fab{bottom:96px}.top-fab{bottom:160px}
+}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+::selection{background:var(--gold);color:#000}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader"><div class="loader-mark">HYDRA</div></div>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand"><span class="brand-mark">H</span>HYDRA</a>
+    <nav class="menu">
+      <a href="#fleet">Fleet</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+918740056887" class="nav-cta">Book Now →</a>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-sheet" id="sheet">
+  <button class="close" id="closeSheet">✕</button>
+  <a href="#fleet">Fleet</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+918740056887" style="color:var(--gold)">Call: 087400 56887</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=2000&q=80" alt="" loading="eager"/>
+    <div class="float f1"></div><div class="float f2"></div><div class="float f3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span>5.0 Rating · 119 Google Reviews</span>
+      </div>
+      <h1 class="hero-title">Drive the <em>Extraordinary</em> in Jaipur.</h1>
+      <p class="hero-sub">Curated luxury fleet, self-drive freedom and chauffeured wedding cars — delivered to your doorstep, 24 hours a day.</p>
+      <div class="cta-row">
+        <a href="https://wa.me/918740056887?text=Hi%20Hydra%20Cars%2C%20I%20want%20to%20book%20a%20car" class="btn btn-gold">Reserve Now <span class="arr">→</span></a>
+        <a href="#fleet" class="btn btn-ghost">Explore Fleet</a>
+      </div>
+      <div class="hero-trust">
+        <span>Home Delivery</span>
+        <span>24×7 Support</span>
+        <span>Verified Drivers</span>
+        <span>Insured Fleet</span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <span class="badge">Featured · SUV</span>
+      <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&q=80" alt="Toyota Fortuner"/>
+      <div class="meta">
+        <h4>Toyota Fortuner</h4>
+        <p>7-Seater · Automatic · Diesel</p>
+      </div>
+      <div class="price"><small>From</small>₹7,000<span style="font-size:14px;color:var(--ink-dim)">/day</span></div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="container">
+      <div class="stat"><div class="num" data-count="5">0</div><div class="lbl">Years of Service</div></div>
+      <div class="stat"><div class="num" data-count="12">0</div><div class="lbl">Premium Vehicles</div></div>
+      <div class="stat"><div class="num" data-count="119">0</div><div class="lbl">5★ Reviews</div></div>
+      <div class="stat"><div class="num" data-count="24" data-suffix="/7">0</div><div class="lbl">Availability</div></div>
+    </div>
+  </div>
+
+  <div class="scroll-ind">Scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Self Drive</span><span>Wedding Cars</span><span>Home Delivery</span><span>Outstation</span><span>Chauffeur Service</span><span>Luxury SUVs</span>
+    <span>Self Drive</span><span>Wedding Cars</span><span>Home Delivery</span><span>Outstation</span><span>Chauffeur Service</span><span>Luxury SUVs</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80" alt="Hydra Cars Jaipur"/>
+      <div class="about-stamp"><div><span>5+</span><small>Years Trusted</small></div></div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">The Hydra Story</div>
+      <h2>A House of <em>Driving Excellence</em> in the Pink City.</h2>
+      <p class="lead">Born in Jaipur and built on a promise — every car spotless, every key handed over on time, every mile worry-free. From a humble Swift to a flagship Fortuner, Hydra Cars curates the finest fleet for self-drive escapes, family trips and once-in-a-lifetime wedding journeys.</p>
+      <ul class="about-points">
+        <li><div class="ic">★</div><div><h5>Concierge-Grade Service</h5><p>Doorstep delivery, paperless onboarding and 24×7 roadside backup.</p></div></li>
+        <li><div class="ic">✓</div><div><h5>Verified, Insured Fleet</h5><p>Every vehicle GPS-equipped, sanitised and fully covered.</p></div></li>
+        <li><div class="ic">♔</div><div><h5>Wedding Specialists</h5><p>Decorated luxury cars with uniformed chauffeurs for your big day.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" style="background:linear-gradient(180deg,#070707,#0a0a0a)">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Our Services</div>
+      <h2>Built Around <em>You.</em></h2>
+      <p class="lead">From spontaneous weekend drives to grand wedding processions — Hydra delivers a tailored experience for every journey.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">⌂</div><h4>Self Drive</h4><p>Take the wheel. Unlimited freedom with hourly, daily and weekly rentals.</p><span class="more">From ₹2,500/day →</span></div>
+      <div class="svc"><div class="ic">♥</div><h4>Wedding Cars</h4><p>Decorated luxury sedans & SUVs with uniformed chauffeurs for your big day.</p><span class="more">From ₹8,000 →</span></div>
+      <div class="svc"><div class="ic">→</div><h4>Outstation Trips</h4><p>Jaipur to Udaipur, Jaisalmer, Delhi — comfortable rides for long journeys.</p><span class="more">Custom Quote →</span></div>
+      <div class="svc"><div class="ic">⌘</div><h4>Corporate Rentals</h4><p>Monthly fleet contracts for businesses with priority support.</p><span class="more">Enquire →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section class="section" id="fleet">
+  <div class="container">
+    <div class="fleet-head">
+      <div class="reveal">
+        <div class="eyebrow">The Collection</div>
+        <h2>A Fleet <em>Worth Driving.</em></h2>
+      </div>
+      <div class="filter-tabs reveal" id="tabs">
+        <button class="active" data-f="all">All</button>
+        <button data-f="hatch">Hatchback</button>
+        <button data-f="sedan">Sedan</button>
+        <button data-f="suv">SUV</button>
+        <button data-f="luxury">Luxury</button>
+      </div>
+    </div>
+    <div class="fleet-grid" id="fleetGrid"></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why" style="background:#050505">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Why Hydra</div>
+      <h2>Six Reasons Jaipur <em>Chooses Us.</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><span class="num">01</span><div class="ic" style="color:var(--gold);font-size:24px">⏰</div><h4>Open 24 Hours</h4><p>Day or night, weekday or weekend — your car is one call away.</p></div>
+      <div class="why reveal"><span class="num">02</span><div class="ic" style="color:var(--gold);font-size:24px">⌂</div><h4>Free Home Delivery</h4><p>We bring the car to your door across Jaipur, sanitised and fueled.</p></div>
+      <div class="why reveal"><span class="num">03</span><div class="ic" style="color:var(--gold);font-size:24px">★</div><h4>5.0★ Google Rated</h4><p>119+ verified reviews from delighted customers — and counting.</p></div>
+      <div class="why reveal"><span class="num">04</span><div class="ic" style="color:var(--gold);font-size:24px">✓</div><h4>Fully Insured</h4><p>Every car covered with comprehensive insurance and 24×7 roadside help.</p></div>
+      <div class="why reveal"><span class="num">05</span><div class="ic" style="color:var(--gold);font-size:24px">₹</div><h4>Transparent Pricing</h4><p>No hidden fees. No surprises. The price you see is the price you pay.</p></div>
+      <div class="why reveal"><span class="num">06</span><div class="ic" style="color:var(--gold);font-size:24px">⚑</div><h4>Verified Chauffeurs</h4><p>Polite, well-uniformed and Jaipur-route experts for chauffeur bookings.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTER -->
+<section class="counter">
+  <div class="container">
+    <div><div class="num" data-count="5">0</div><div class="lbl">Years Driving Jaipur</div></div>
+    <div><div class="num" data-count="119">0</div><div class="lbl">Happy Reviews</div></div>
+    <div><div class="num" data-count="12">0</div><div class="lbl">Cars in Fleet</div></div>
+    <div><div class="num" data-count="4800" data-suffix="+">0</div><div class="lbl">Trips Completed</div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">How It Works</div>
+      <h2>Book in <em>Four Easy Steps.</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="step">Step 01</div><h4>Choose Your Car</h4><p>Browse our fleet and pick a vehicle that fits your trip — from compact hatchbacks to flagship SUVs.</p></div>
+      <div class="tl-item reveal"><div class="step">Step 02</div><h4>Reserve via WhatsApp</h4><p>Send dates & location on WhatsApp or call us. We confirm in minutes.</p></div>
+      <div class="tl-item reveal"><div class="step">Step 03</div><h4>Doorstep Delivery</h4><p>Submit ID, pay a small deposit, and we hand over the keys at your door.</p></div>
+      <div class="tl-item reveal"><div class="step">Step 04</div><h4>Drive & Enjoy</h4><p>Hit the road. Our 24×7 support team is one call away if you need anything.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="reviews" style="background:#050505">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Reviews</div>
+      <h2>Loved by <em>119+ Travellers.</em></h2>
+    </div>
+    <div class="tslider">
+      <div class="ttrack" id="ttrack"></div>
+      <div class="tnav">
+        <button id="tprev">←</button>
+        <button id="tnext">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Gallery</div>
+      <h2>Moments on the <em>Road.</em></h2>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing" style="background:#050505">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Pricing Plans</div>
+      <h2>Simple, <em>Transparent</em> Rates.</h2>
+    </div>
+    <div class="price-grid">
+      <div class="plan reveal">
+        <h4>Self Drive</h4>
+        <p class="desc">Take the keys & explore at your own pace.</p>
+        <div class="pamt">₹2,500<small>/day onwards</small></div>
+        <ul>
+          <li>Unlimited freedom</li>
+          <li>250 KM/day included</li>
+          <li>24×7 roadside assistance</li>
+          <li>Free home delivery</li>
+        </ul>
+        <a href="https://wa.me/918740056887?text=Self%20drive%20enquiry" class="btn btn-ghost">Enquire →</a>
+      </div>
+      <div class="plan feat reveal">
+        <span class="pop">Most Booked</span>
+        <h4>Chauffeur Drive</h4>
+        <p class="desc">Sit back. We drive. You enjoy Jaipur.</p>
+        <div class="pamt">₹3,500<small>/day onwards</small></div>
+        <ul>
+          <li>Trained, uniformed driver</li>
+          <li>Local & outstation trips</li>
+          <li>Fuel & tolls extra</li>
+          <li>SUV & sedan options</li>
+        </ul>
+        <a href="https://wa.me/918740056887?text=Chauffeur%20enquiry" class="btn btn-gold">Book Now →</a>
+      </div>
+      <div class="plan reveal">
+        <h4>Wedding Special</h4>
+        <p class="desc">Make the entrance unforgettable.</p>
+        <div class="pamt">₹8,000<small>/event onwards</small></div>
+        <ul>
+          <li>Decorated luxury cars</li>
+          <li>Uniformed chauffeur</li>
+          <li>Fortuner / XUV700 / Crysta</li>
+          <li>Multi-day packages</li>
+        </ul>
+        <a href="https://wa.me/918740056887?text=Wedding%20car%20enquiry" class="btn btn-ghost">Reserve →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal" style="max-width:720px;margin:0 auto;text-align:center">
+      <div class="eyebrow" style="justify-content:center">Questions</div>
+      <h2>Frequently <em>Asked.</em></h2>
+    </div>
+    <div class="faq">
+      <details open><summary>What documents do I need for self-drive?</summary><p>A valid driving licence, Aadhaar card, and a refundable security deposit. That's it — we handle the rest.</p></details>
+      <details><summary>Do you deliver the car to my location?</summary><p>Yes. Free home delivery anywhere in Jaipur. Outstation delivery available on request.</p></details>
+      <details><summary>Are the cars insured?</summary><p>Every vehicle in our fleet carries comprehensive insurance and 24×7 roadside assistance.</p></details>
+      <details><summary>Can I take the car outstation?</summary><p>Absolutely. We offer outstation packages to Udaipur, Jaisalmer, Delhi, Pushkar and more.</p></details>
+      <details><summary>What's included in wedding packages?</summary><p>Decorated luxury car, uniformed driver, fuel for local use, and on-site coordination. Custom packages available.</p></details>
+      <details><summary>How do I cancel or modify a booking?</summary><p>Just WhatsApp us at least 6 hours before pickup for full flexibility.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section" id="blog" style="background:#050505">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Journal</div>
+      <h2>Stories from the <em>Road.</em></h2>
+    </div>
+    <div class="blog-grid">
+      <article class="post reveal">
+        <div class="post-img"><img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=900&q=80" alt=""/></div>
+        <div class="post-body">
+          <span class="tag">Travel Guide</span>
+          <h4>Jaipur to Udaipur — The Perfect Self-Drive Route</h4>
+          <p>The ultimate 8-hour drive across Rajasthan with the best stops and viewpoints.</p>
+          <div class="meta"><span>5 min read</span><span>Jun 2026</span></div>
+        </div>
+      </article>
+      <article class="post reveal">
+        <div class="post-img"><img src="https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?w=900&q=80" alt=""/></div>
+        <div class="post-body">
+          <span class="tag">Wedding Cars</span>
+          <h4>Choosing the Right Wedding Car in Jaipur</h4>
+          <p>From classic sedans to flagship SUVs — match the car to the moment.</p>
+          <div class="meta"><span>4 min read</span><span>May 2026</span></div>
+        </div>
+      </article>
+      <article class="post reveal">
+        <div class="post-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&q=80" alt=""/></div>
+        <div class="post-body">
+          <span class="tag">Tips</span>
+          <h4>10 Things to Check Before Self-Drive Rental</h4>
+          <p>A practical checklist for first-time self-drive renters in India.</p>
+          <div class="meta"><span>6 min read</span><span>Apr 2026</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Let's Plan Your <em>Next Drive.</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="cinfo">
+          <div class="row"><div class="ic">☎</div><div><small>Call Us</small><div class="v">087400 56887</div></div></div>
+          <div class="row"><div class="ic">✉</div><div><small>Email</small><div class="v">hydracarsjaipur@gmail.com</div></div></div>
+          <div class="row"><div class="ic">⌂</div><div><small>Visit</small><div class="v">Shiv Vatika-A, Manyawas, Mansarovar, Jaipur 302020</div></div></div>
+          <div class="row"><div class="ic">◷</div><div><small>Hours</small><div class="v">Open 24 Hours · 7 Days</div></div></div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Mansarovar+Jaipur&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+      <form class="cform reveal" id="cform" novalidate>
+        <h4>Request a Booking</h4>
+        <p class="sub">Fill the form — we'll WhatsApp you in minutes.</p>
+        <div class="row2">
+          <div class="field"><label>Name</label><input name="name" maxlength="60" required/><div class="err">Please enter your name</div></div>
+          <div class="field"><label>Phone</label><input name="phone" type="tel" maxlength="15" required/><div class="err">Valid 10-digit number required</div></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label>Pick-up Date</label><input name="date" type="date" required/><div class="err">Choose a date</div></div>
+          <div class="field"><label>Car</label><select name="car" required>
+            <option value="">Select…</option>
+            <option>Maruti Swift</option><option>Maruti Dzire</option><option>Hyundai i20</option>
+            <option>Hyundai Creta</option><option>Kia Seltos</option><option>Maruti Ertiga</option>
+            <option>Toyota Rumion</option><option>Mahindra Scorpio N</option><option>Mahindra XUV700</option>
+            <option>Toyota Innova Crysta</option><option>Mahindra Thar</option><option>Toyota Fortuner</option>
+            <option>Wedding Car</option><option>Self Drive</option>
+          </select><div class="err">Select a car</div></div>
+        </div>
+        <div class="field"><label>Message</label><textarea name="msg" rows="3" maxlength="500" placeholder="Trip details, drop location, special requests…"></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:10px">Send via WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news">
+  <div class="container">
+    <h3 class="serif">Join the <em style="color:var(--gold-2)">Hydra Circle</em></h3>
+    <p>Get exclusive offers, new fleet announcements and weekend driving routes — straight to your inbox.</p>
+    <form id="newsForm">
+      <input type="email" placeholder="your@email.com" required maxlength="80"/>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#" style="margin-bottom:20px"><span class="brand-mark">H</span>HYDRA</a>
+        <p style="margin-top:20px">Premium self-drive cars, luxury wedding fleet & 24×7 chauffeur service in Jaipur. Five-star rated by 119+ travellers.</p>
+        <div class="socials">
+          <a href="https://instagram.com/hydracarsjaipur" aria-label="Instagram">◉</a>
+          <a href="https://wa.me/918740056887" aria-label="WhatsApp">✆</a>
+          <a href="tel:+918740056887" aria-label="Call">☎</a>
+          <a href="mailto:hydracarsjaipur@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div>
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Services</h6>
+        <ul>
+          <li><a href="#services">Self Drive</a></li>
+          <li><a href="#services">Wedding Cars</a></li>
+          <li><a href="#services">Outstation</a></li>
+          <li><a href="#services">Chauffeur</a></li>
+          <li><a href="#services">Corporate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <ul>
+          <li>087400 56887</li>
+          <li>hydracarsjaipur@gmail.com</li>
+          <li>Mansarovar, Jaipur 302020</li>
+          <li>Open 24 Hours</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div>© 2026 Hydra Cars Jaipur. All rights reserved.</div>
+      <div class="credit">built with ♥ by rahul choudhary</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="https://wa.me/918740056887?text=Hi%20Hydra%20Cars" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.2-.7.2-.8.9-1 1.1-.4.2-.7 0c-1-.5-1.7-.9-2.4-2-.2-.4.2-.4.5-1.2.1-.2 0-.3 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3 2 3.1 4.9 4.3c1.7.7 2.4.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.8L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+<button class="top-fab" id="topFab" aria-label="Back to top">↑</button>
+
+<!-- MOBILE BAR -->
+<div class="mbar">
+  <a href="tel:+918740056887" class="call">☎ Call</a>
+  <a href="https://wa.me/918740056887" class="wa">✆ WhatsApp</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lb"><button class="x" id="lbx">✕</button><img id="lbimg" alt=""/></div>
+
+<script>
+/* LOADER */
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('hide'),600));
+
+/* CURSOR */
+const dot=document.querySelector('.cursor-dot'), ring=document.querySelector('.cursor-ring');
+let rx=0,ry=0,tx=0,ty=0;
+window.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;dot.style.left=tx+'px';dot.style.top=ty+'px'});
+function loop(){rx+=(tx-rx)*.15;ry+=(ty-ry)*.15;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop)}loop();
+document.querySelectorAll('a,button,.car,.svc').forEach(el=>{el.addEventListener('mouseenter',()=>ring.classList.add('hover'));el.addEventListener('mouseleave',()=>ring.classList.remove('hover'))});
+
+/* NAV scroll */
+const nav=document.getElementById('nav'), topFab=document.getElementById('topFab');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  topFab.classList.toggle('show',window.scrollY>600);
+});
+topFab.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* MOBILE MENU */
+const sheet=document.getElementById('sheet');
+document.getElementById('ham').onclick=()=>sheet.classList.add('open');
+document.getElementById('closeSheet').onclick=()=>sheet.classList.remove('open');
+sheet.querySelectorAll('a').forEach(a=>a.onclick=()=>sheet.classList.remove('open'));
+
+/* REVEAL */
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* COUNTERS */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting||e.target.dataset.done)return;
+  e.target.dataset.done=1;
+  const end=+e.target.dataset.count, suf=e.target.dataset.suffix||'';
+  const dur=1800, start=performance.now();
+  const tick=t=>{const p=Math.min(1,(t-start)/dur);const v=Math.floor(end*(1-Math.pow(1-p,3)));e.target.textContent=v+suf;if(p<1)requestAnimationFrame(tick)};
+  requestAnimationFrame(tick);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* SERVICE CARD MOUSE GLOW */
+document.querySelectorAll('.svc').forEach(c=>{
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')});
+});
+
+/* FLEET */
+const fleet=[
+  {n:'Maruti Swift',p:1800,c:'hatch',f:'Petrol',t:'Manual',s:5,img:'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80'},
+  {n:'Maruti Dzire',p:2200,c:'sedan',f:'Petrol',t:'Manual',s:5,img:'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80'},
+  {n:'Hyundai i20',p:2000,c:'hatch',f:'Petrol',t:'Manual',s:5,img:'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80'},
+  {n:'Hyundai Creta',p:3500,c:'suv',f:'Diesel',t:'Automatic',s:5,img:'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80'},
+  {n:'Kia Seltos',p:3800,c:'suv',f:'Petrol',t:'Automatic',s:5,img:'https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=800&q=80'},
+  {n:'Maruti Ertiga',p:3000,c:'suv',f:'Petrol',t:'Manual',s:7,img:'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80'},
+  {n:'Toyota Rumion',p:3200,c:'suv',f:'Petrol',t:'Manual',s:7,img:'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80'},
+  {n:'Mahindra Scorpio N',p:4500,c:'suv',f:'Diesel',t:'Automatic',s:7,img:'https://images.unsplash.com/photo-1612825173281-9a193378527e?w=800&q=80'},
+  {n:'Mahindra XUV700',p:5000,c:'luxury',f:'Diesel',t:'Automatic',s:7,img:'https://images.unsplash.com/photo-1568844293986-8d0400bd4745?w=800&q=80'},
+  {n:'Toyota Innova Crysta',p:4500,c:'suv',f:'Diesel',t:'Automatic',s:7,img:'https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80'},
+  {n:'Mahindra Thar',p:5500,c:'luxury',f:'Diesel',t:'Automatic',s:4,img:'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80'},
+  {n:'Toyota Fortuner',p:7000,c:'luxury',f:'Diesel',t:'Automatic',s:7,img:'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80'},
+];
+const grid=document.getElementById('fleetGrid');
+function render(filter='all'){
+  grid.innerHTML='';
+  fleet.filter(c=>filter==='all'||c.c===filter).forEach(c=>{
+    const cat={hatch:'Hatchback',sedan:'Sedan',suv:'SUV',luxury:'Luxury'}[c.c];
+    const msg=encodeURIComponent(`Hi Hydra Cars, I want to book the ${c.n} (₹${c.p}/day). Please share availability.`);
+    grid.insertAdjacentHTML('beforeend',`
+      <article class="car reveal">
+        <div class="car-img"><span class="car-cat">${cat}</span><img loading="lazy" src="${c.img}" alt="${c.n}"/></div>
+        <div class="car-body">
+          <h4>${c.n}</h4>
+          <div class="car-specs"><span>⚙ ${c.t}</span><span>⛽ ${c.f}</span><span>👤 ${c.s} Seats</span></div>
+          <div class="car-foot">
+            <div class="car-price">₹${c.p.toLocaleString('en-IN')}<small>per day</small></div>
+            <a href="https://wa.me/918740056887?text=${msg}" class="car-btn">Book →</a>
+          </div>
+        </div>
+      </article>`);
+  });
+  document.querySelectorAll('.car').forEach(el=>io.observe(el));
+}
+render();
+document.getElementById('tabs').addEventListener('click',e=>{
+  if(e.target.tagName!=='BUTTON')return;
+  document.querySelectorAll('#tabs button').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  render(e.target.dataset.f);
+});
+
+/* TESTIMONIALS */
+const reviews=[
+  {n:'Rohit Sharma',r:'Booked a Fortuner for our Udaipur trip. Spotless car, on-time delivery, super polite team. Easily the best rental in Jaipur.',i:'R'},
+  {n:'Anjali Mehta',r:'Hired Hydra for my wedding — decorated XUV700 was stunning. The driver was punctual and professional. Highly recommend!',i:'A'},
+  {n:'Vikas Agarwal',r:'Self-drive Creta for 5 days. Smooth booking, no hidden charges, 24×7 support. I will only rent from Hydra now.',i:'V'},
+  {n:'Priya Singh',r:'Home delivery in Mansarovar was on the dot. Loved the Thar — well maintained and great pricing.',i:'P'},
+  {n:'Karan Jain',r:'Used the Innova for a family trip to Pushkar. Spacious, clean and excellent service. Five stars all the way.',i:'K'},
+  {n:'Neha Gupta',r:'Wedding car service was flawless. The team coordinated everything perfectly. Thank you Hydra!',i:'N'},
+];
+const ttrack=document.getElementById('ttrack');
+reviews.forEach(r=>ttrack.insertAdjacentHTML('beforeend',`
+  <div class="tcard"><div class="stars">★★★★★</div><p class="quote">"${r.r}"</p><div class="who"><div class="av">${r.i}</div><div><h6>${r.n}</h6><small>Verified Google Review</small></div></div></div>`));
+let ti=0;
+function slide(){const w=ttrack.children[0].offsetWidth+24;ttrack.style.transform=`translateX(-${ti*w}px)`}
+document.getElementById('tnext').onclick=()=>{ti=Math.min(ti+1,reviews.length- (window.innerWidth>980?3:window.innerWidth>620?2:1));slide()};
+document.getElementById('tprev').onclick=()=>{ti=Math.max(0,ti-1);slide()};
+setInterval(()=>{const max=reviews.length-(window.innerWidth>980?3:window.innerWidth>620?2:1);ti=ti>=max?0:ti+1;slide()},5000);
+
+/* GALLERY */
+const galImgs=[
+  'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&q=80',
+  'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&q=80',
+  'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=80',
+  'https://images.unsplash.com/photo-1568844293986-8d0400bd4745?w=1200&q=80',
+  'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80',
+  'https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=1200&q=80',
+  'https://images.unsplash.com/photo-1612825173281-9a193378527e?w=1200&q=80',
+  'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200&q=80',
+];
+const gal=document.getElementById('gal');
+galImgs.forEach((src,i)=>gal.insertAdjacentHTML('beforeend',`<a href="#" data-src="${src}" class="${i===0?'big':''}"><img loading="lazy" src="${src}" alt=""/></a>`));
+const lb=document.getElementById('lb'), lbimg=document.getElementById('lbimg');
+gal.addEventListener('click',e=>{e.preventDefault();const a=e.target.closest('a');if(!a)return;lbimg.src=a.dataset.src;lb.classList.add('open')});
+document.getElementById('lbx').onclick=()=>lb.classList.remove('open');
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
+
+/* CONTACT FORM */
+document.getElementById('cform').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target, fields=['name','phone','date','car'];
+  let ok=true;
+  fields.forEach(k=>{
+    const el=f.elements[k], fd=el.closest('.field');
+    let bad=!el.value.trim();
+    if(k==='phone'&&!/^[0-9+\s-]{10,15}$/.test(el.value.trim()))bad=true;
+    fd.classList.toggle('bad',bad); if(bad)ok=false;
+  });
+  if(!ok)return;
+  const msg=`*Booking Request — Hydra Cars*%0A%0AName: ${encodeURIComponent(f.name.value)}%0APhone: ${encodeURIComponent(f.phone.value)}%0ADate: ${encodeURIComponent(f.date.value)}%0ACar: ${encodeURIComponent(f.car.value)}%0AMessage: ${encodeURIComponent(f.msg.value||'-')}`;
+  window.open(`https://wa.me/918740056887?text=${msg}`,'_blank');
+});
+
+/* NEWSLETTER */
+document.getElementById('newsForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const inp=e.target.querySelector('input');
+  if(!/^\S+@\S+\.\S+$/.test(inp.value))return;
+  e.target.innerHTML='<div style="padding:14px;color:var(--gold);font-family:Cormorant Garamond,serif;font-size:20px">✓ Welcome to the Hydra Circle</div>';
+});
+</script>
+</body>
+</html>
